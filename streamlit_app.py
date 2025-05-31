@@ -1,9 +1,9 @@
-
 import streamlit as st
 from PIL import Image, ImageDraw, ImageFont
 import io, zipfile, os
 
-APP_VERSION = "v1.0.1"
+APP_VERSION = "v1.0.2"
+DEFAULT_THAI_FONT = "default_thai_font.ttf"
 
 st.set_page_config(page_title="Product Frame Generator", layout="centered")
 st.title(f"🖼 Product Frame Generator  \n:gray[เวอร์ชัน {APP_VERSION}]")
@@ -57,8 +57,8 @@ if st.button("✅ สร้างภาพพร้อมกรอบ"):
                 if uploaded_font:
                     font = ImageFont.truetype(uploaded_font, font_size)
                 else:
-                    font = ImageFont.load_default()
-                    st.info("💡 ไม่มีฟอนต์ที่อัปโหลด → ใช้ฟอนต์เริ่มต้นของระบบ")
+                    font = ImageFont.truetype(DEFAULT_THAI_FONT, font_size)
+                    st.info("💡 ไม่มีฟอนต์ที่อัปโหลด → ใช้ฟอนต์ภาษาไทยพื้นฐาน (IBM Plex Sans Thai)")
             except Exception as e:
                 st.warning(f"⚠️ ฟอนต์ไม่สามารถโหลดได้: {e}")
                 font = ImageFont.load_default()

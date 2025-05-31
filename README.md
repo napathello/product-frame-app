@@ -7,7 +7,7 @@ A Streamlit web application for adding frames and product codes to multiple imag
 - Upload multiple product images
 - Apply custom frame to all images
 - Add product codes with customizable:
-  - Font (TTF support)
+  - Font (TTF support with IBM Plex Sans Thai as default)
   - Font size
   - Text position (X, Y coordinates)
 - Image aspect ratio options (1:1, 4:5, 3:4, 9:16, or original)
@@ -49,4 +49,4 @@ streamlit run streamlit_app.py
 
 ## Version
 
-Current version: v1.0.1 
+Current version: v1.0.2 
