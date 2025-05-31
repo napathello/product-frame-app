@@ -6,6 +6,10 @@ A Streamlit web application for adding frames and product codes to multiple imag
 
 - Upload multiple product images
 - Apply custom frame to all images
+- Manual image cropping:
+  - Select crop area with mouse
+  - Adjust crop box dimensions
+  - Visual crop preview
 - Add product codes with customizable:
   - Font (TTF support with IBM Plex Sans Thai as default)
   - Font size
@@ -49,4 +53,4 @@ streamlit run streamlit_app.py
 
 ## Version
 
-Current version: v1.0.2 
+Current version: v1.0.3 
