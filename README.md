@@ -10,6 +10,7 @@ A Streamlit web application for adding frames and product codes to multiple imag
   - Font (TTF support)
   - Font size
   - Text position (X, Y coordinates)
+- Image aspect ratio options (1:1, 4:5, 3:4, 9:16, or original)
 - Download all processed images in a ZIP file
 
 ## Requirements
@@ -48,4 +49,4 @@ streamlit run streamlit_app.py
 
 ## Version
 
-Current version: v1.0.0 
+Current version: v1.0.1 
